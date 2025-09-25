@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCSM</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="/Imagens/usinagem.ico">
+</head>
+
+<style>
+    .texto {
+        position: absolute;
+        text-align: center;
+        z-index: 1;
+        /* fica atrás do relógio */
+        color: white;
+        /* para destacar no vídeo */
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+        font-size: 1cm;
+    }
+
+    a {
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+    }
+
+    body {
+            margin: 0;
+            padding: 0;
+            /* É uma boa prática resetar o padding também */
+        }
+</style>
+
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="topnav">
+        <a href="/index.html">Home</a>
+        <a href="/HTML/sobre_nos.html">Sobre Nós</a>
+        <a href="/HTML/produtos.html">Produtos e Serviços</a>
+        <a href="/HTML/galeria.html">Galeria</a>
+        <a href="/HTML/contato.html">Contato</a>
+        <a href="/HTML/blog.html">Blog</a>
+    </nav>
+
+    <!--Inserção da no fundo-->
+    <div class="video">
+        <img src="/Imagens/usina.png">
+        <div class="video-container"></div>
+    </div>
+    <!-- <div class="video-container"></div> -->
+
+    <!--Inserção do texto-->
+    <div class="slogan_text">
+        <div class="texto">
+            <h1>Transformando metal em soluções <br>há mais de 20 anos</h1>
+        </div>
+    </div>
+
+    <!-- corpo -->
+    <section id="secao_texto_corpo">
+        <h1
+            style="color: white; font-family: 'Trebuchet MS', Arial, sans-serif; font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 1cm; text-align: center;">
+            O processo da Usinagem</h1>
+        <p
+            style="color: white; font-family: 'Trebuchet MS', Arial, sans-serif; font-family: 'Trebuchet MS', Arial, sans-serif; font-size: xx-large;">
+            Usinagem é o processo de fabricação que transforma matérias-primas metálicas ou plásticas em peças com
+            formas e dimensões precisas, por meio da remoção controlada de material. Isso é feito com máquinas como
+            tornos, fresadoras, furadeiras e centros de usinagem CNC. Ela é essencial em setores como automobilístico,
+            aeroespacial, agrícola e industrial, garantindo componentes com alta exatidão, acabamento técnico e
+            desempenho confiável. A usinagem pode envolver operações como corte, furação, rosqueamento, torneamento e
+            fresamento, sempre com foco na qualidade e na durabilidade da peça final.</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer style="width: 100%; height: 400px; z-index: -1; position: absolute;">
+        <img src="/Imagens/134733.jpg" alt="Lateral da usinagem" style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- <div style="width: 100%; height: 400px; background-color: rgb(127, 255, 212); position: relative;"></div> -->
+    </footer>
+</body>
+
+</html>

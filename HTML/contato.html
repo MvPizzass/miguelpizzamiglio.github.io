@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="/CSS/contato.css">
+    <link rel="icon" type="image/x-icon" href="/Imagens/usinagem.ico">
+
+    <style>
+        h1,
+        .item-grid {
+            color: white;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            font-size: xx-large;
+            text-align: center;
+            padding: 20px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            /* É uma boa prática resetar o padding também */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="topnav">
+        <a href="/index.html">Home</a>
+        <a href="/HTML/sobre_nos.html">Sobre Nós</a>
+        <a href="/HTML/produtos.html">Produtos e Serviços</a>
+        <a href="/HTML/galeria.html">Galeria</a>
+        <a href="/HTML/contato.html">Contato</a>
+        <a href="/HTML/blog.html">Blog</a>
+    </nav>
+
+    <div class="video-container"></div>
+    <h1 style="text-align: center; font-size: 1.5cm; margin-bottom: 5px;">Informações para contato a baixo</h1>
+
+    <div class="contato-container">
+        <div class="item-grid">Telefone: (16) 3821-6000</div>
+        <div class="item-grid">CNPJ: 12.345.678/0001-90</div>
+        <div class="item-grid">WhatsApp: (16) 99999-1234</div>
+        <div class="item-grid">E-mail: contato@ucsmmetal.com.br</div>
+        <div class="item-grid">Site oficial: www.ucsmmetal.com.br</div>
+        <div class="item-grid">Instagram: @ucsmmetal</div>
+    </div>
+
+
+    <h1 style="text-align: center; font-size: 1.5cm; margin-bottom: 5px;">Formulario para contato</h1>
+    <form action="/HTML/contato.html" method="get">
+        <fieldset class="grid-servicos">
+            <legend>Solicite um Orçamento</legend>
+
+            
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required minlength="3"><br><br>
+
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required><br><br>
+
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX"
+                pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" required><br><br>
+
+            
+            <label for="servico">Tipo de serviço:</label>
+            <select id="servico" name="servico" required>
+                <option value="" disabled selected>Selecione...</option>
+                <option value="usinagem">Usinagem CNC</option>
+                <option value="caldeiraria">Caldeiraria</option>
+                <option value="solda">Solda MIG/TIG</option>
+                <option value="manutencao">Manutenção Industrial</option>
+            </select><br><br>
+
+            
+            <label>Urgência do serviço:</label><br>
+            <label for="normal">Normal <input type="radio" id="normal" name="urgencia" value="normal" required></label><br>
+            <label for="urgente">Urgente <input type="radio" id="urgente" name="urgencia" value="urgente"></label><br><br>
+
+            
+            <label>Preferência de contato:</label><br>
+            <label for="contato_email">E-mail <input type="checkbox" id="contato_email" name="preferencia_contato" value="email"></label><br> <!-- um dentro do outro para ficar na frente-->
+            <label for="contato_tel">Telefone <input type="checkbox" id="contato_tel" name="preferencia_contato" value="telefone"></label><br><br>
+            
+            <label for="descricao">Descrição do serviço:</label><br>
+            <textarea id="descricao" name="descricao" rows="5" cols="40" placeholder="Descreva o que precisa..."
+                required minlength="10"></textarea><br><br>
+
+            
+            <button type="submit">Enviar Solicitação</button>
+            <button type="reset">Limpar Campos</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

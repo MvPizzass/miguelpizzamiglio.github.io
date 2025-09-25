@@ -1,0 +1,88 @@
+
+/* Barra de navegação do topo */
+.topnav{  
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+/* quando em cima */
+.topnav a:hover { 
+  background-color: #ddd;
+  color: rgb(0, 0, 0);
+}
+
+/* quando nele */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* -------------------------------------------- */
+
+.video-container{
+    z-index: -1; /* deixa atrás do conteúdo TIRAR ISSO DEPOIS*/
+    position: fixed; /* cobre toda a tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(49, 49, 49, 0.76), rgb(0,0,0));
+}
+
+
+
+/* -------------------------------------------- */
+/* Grid Layout */
+.servicos-usinagem {
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.servicos-usinagem h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 1cm;
+}
+
+.grid-servicos {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.servico {
+  background-color: #fff;
+  border: 2px solid #0000009c;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(78, 78, 78, 0.568);
+}
+
+.servico h3 {
+  margin-top: 0;
+  color: #04AA6D;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 25px;
+}
+
+.servico p {
+  margin: 8px 0;
+  color: #000000;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 18px;
+}
